@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.bgd-image{
+    width: 100%;
+    height: 100vh;
+    background: url(image.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 150%;
+}
+
+.container{
+    padding: 100px;
+}
+.container h1{
+    font-size: 50px;
+}
+.container p{
+    text-align: justify;
+    color: gray;
+}
+
+@media (max-width: 500px) {
+    .container{
+        padding: 10px;
+    }
+}

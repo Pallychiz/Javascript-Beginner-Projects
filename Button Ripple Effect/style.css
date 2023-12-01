@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+
+.btn{
+    background-color: pink;
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+.btn span{
+    position: relative;
+    z-index: 1;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    background: rgba(255,255,255,.4);
+    /* The width and height below were originally set to 20px each, to get the styling. They were set to 0 afterwards */
+    width: 0;
+    height: 0;
+    /* The left and top position of the btn::before changes according to the position of the mouse. Hence var() properties named --xPos and --yPos will be used */
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width .5s, height .5s;
+}
+.btn:hover::before{
+    width: 300px;
+    height: 300px;
+}

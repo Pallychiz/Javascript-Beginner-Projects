@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: pink;
+}
+
+.container{
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    color: greenyellow;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.7);
+    white-space: nowrap;
+}
+
+.btn{
+    padding: 30px 50px;
+    background-color: white;
+    border: none;
+    margin: 10px;
+    font-size: 30px;
+    min-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    background-image: url(Images/kick.png);
+    color: green;
+    font-weight: 700;
+    background-size: cover;
+    font-family: cursive;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+    cursor: pointer;
+}
+.btn:hover{
+    color: greenyellow;
+}
+.btn:active{
+    background-size: 105%;
+}

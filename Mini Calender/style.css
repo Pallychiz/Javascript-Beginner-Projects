@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: cursive;
+}
+
+.calender{
+    width: 300px;
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+
+.month{
+    margin: 0;
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.day{
+    font-size: 20px;
+    color: rgb(138, 123, 123);
+}
+
+.day-number{
+    font-size: 80px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.year{
+    margin: 20px 0;
+    font-size: 20px;
+    color: rgb(58, 10, 10);
+    font-weight: 500;
+}
